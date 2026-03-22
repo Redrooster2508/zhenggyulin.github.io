@@ -1,6 +1,6 @@
 # the making of my digital portfolio, zhenggyulin.github.io
 
-Personal portfolio website — built and maintained by Zheng Yulin.
+Personal portfolio website — built and maintained by me.
 
 Live at: **[zhenggyulin.github.io](https://zhenggyulin.github.io)**
 
@@ -92,7 +92,7 @@ open index.html
 ## Contact
 
 **Zheng Yulin**
-Engineering & Product Design, SUTD — Electrical Engineering Track
+
 
 - Email: tayyulin@gmail.com
 - LinkedIn: [linkedin.com/in/ylzhng](https://linkedin.com/in/ylzhng)
