@@ -591,7 +591,7 @@
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-number">5+</div>
+          <div class="stat-number" id="project-count">0</div>
           <div class="stat-label">Projects Completed</div>
         </div>
         <div class="stat-card">
@@ -677,6 +677,20 @@
           <span class="tag">Rapid Prototyping</span>
         </div>
       </div>
+
+      <div class="project-card reveal">
+  <div class="project-number">05 — Biomedical / Embedded</div>
+  <div class="project-title">Medical Sensor Monitor</div>
+  <p class="project-desc">A small embedded system that reads body temperature and heart rate, displaying live readings on an LCD and logging data to a PC for analysis. Built to develop hands-on experience with biomedical sensing and analogue sensor integration — my first real attempt at wiring analogue sensors with a microcontroller.</p>
+  <div class="project-tags">
+    <span class="tag">Arduino</span>
+    <span class="tag">Embedded Systems</span>
+    <span class="tag">Biomedical Sensing</span>
+    <span class="tag">LCD Display</span>
+    <span class="tag">Data Logging</span>
+  </div>
+  <a href="https://github.com/Redrooster2508/MedSensorMonitor" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:0.08em;">VIEW ON GITHUB ↗</a>
+</div>
 
     </div>
   </section>
@@ -803,6 +817,17 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
+    // Live project counter
+const projectCards = document.querySelectorAll('.project-card');
+const countEl = document.getElementById('project-count');
+const target = projectCards.length;
+let count = 0;
+const interval = setInterval(() => {
+  count++;
+  countEl.textContent = count + '+';
+  if (count >= target) clearInterval(interval);
+}, 120);
 
 
   </script>
